@@ -1,0 +1,40 @@
+.carrito2{
+    display: none;
+    text-align: center;
+    width: 60%;
+    animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.5s; /* don't forget to set a duration! */
+    background-color: $claro;
+    color: $oscuro;
+    border-radius: 15px;
+    box-shadow:4px -4px $oscuro;
+}
+.recursosTesoro{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    .recurso{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    align-items: center;
+        .textoLink{
+            font-size: 1.5em;
+        }
+        a:link, a:visited, a:active {
+          text-decoration:none;
+          color: $oscuro;
+        }
+        img{
+          width: 30px;
+          height: 30px;
+          margin: 5px;
+          }
+          .btnEliminar{
+          margin: 10px;
+          }
+    }
+}

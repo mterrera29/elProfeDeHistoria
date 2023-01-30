@@ -1,0 +1,46 @@
+[
+    {"id": 1, "nombre" : "¿Qué es la Historia?", "icon":"../img/reloj.png","class": "historia", "texto":[
+        {"nombre":"¿Qué es la Historia?","link":"https://drive.google.com/file/d/152Y2ChXQiCKe84ZVyddaWW_azDZNX4ut/view?usp=share_link","icon":"pdf"},
+        {"nombre":"El trabajo del Historiador","link":"https://drive.google.com/file/d/1z0nPj6H8OkQo0Onk9f384dSvRLOoLn24/view?usp=share_link","icon":"pdf"},
+        {"nombre":"Edades Históricas I","link":"https://drive.google.com/file/d/1dYSymklzww0S2KviDa1UDfSUeZJhXl67/view?usp=share_link","icon":"pdf"},
+        {"nombre":"Edades Históricas II","link":"https://drive.google.com/file/d/1eQJquwpJa9KnQrOb-uXPUtxWo4n92n-5/view?usp=share_link","icon":"pdf"}
+        ]},
+    {"id": 2, "nombre" : "Los Homínidos", "icon":"../img/historia/hominidos-icon.png","class": "hominidos", "texto":[
+        {"nombre":"La Hominización","link":"https://drive.google.com/file/d/1NFAe9G7Nc98r2HVVZsNfKmAnd6yK7Vo0/view?usp=share_link","icon":"pdf"},
+        {"nombre":"Los Homínidos","link":"https://drive.google.com/file/d/1PbZePa7qkWt9m9lMsKfvf8TcjGtUTgBS/view?usp=share_link","icon":"pdf"},
+        {"nombre":"Los Homínidos- Fichas","link":"https://drive.google.com/file/d/1zq1ugyjJoxF6KDZjB42xjIo53QxZ5cLk/view?usp=share_link","icon":"pdf"},
+        {"nombre":"Lucy la Australopithecus","link":"https://drive.google.com/file/d/1LqgWVjRppeoQnxdEdi1A8ghFSJbJYz4E/view?usp=share_link","icon":"pdf"},
+        {"nombre":"Arbol Evolutivo","link":"https://drive.google.com/file/d/1J8R5yZLBfYF7TA1qdSwzthZj_-eXvUQ6/view?usp=share_link","icon":"pdf"}
+        ]},
+    {"id":3 , "nombre" : "La Prehistoria", "icon":"../img/historia/prehistoria-icon.png","class": "prehistoria","texto":[ {"nombre":"El poblamiento de América","link":"https://drive.google.com/file/d/1JdXqHr_w86FM-y7qIhXyIDZ0xsyZzFal/view?usp=share_link","icon":"pdf"}
+    ]},
+    {"id": 4, "nombre" : "El Paleolítico", "icon":"../img/historia/paleolitico-icon.png","class": "paleolitico", "texto":[
+        {"nombre":"La Prehistoria y el Paleolítico","link":"https://drive.google.com/file/d/1G_mAr1bDb3ji6yAvX5pTL4Klve6lZVr4/view?usp=share_link","icon":"pdf"},
+        {"nombre":"Primeras formas de subsistencia","link":"https://drive.google.com/file/d/1t6xRIeXDPYk5-lcP0Mc1u8t3n0uu6fGf/view?usp=share_link","icon":"pdf"},
+        {"nombre":"La Prehistoria y el Paleolítico - Presentación","link":"https://drive.google.com/file/d/1HRcOyn2P1OMc282YvjwG-uuZeZLNY2Tm/view?usp=share_link","icon":"pdf"},
+        {"nombre":"Cultura del Paleolítico","link":"https://drive.google.com/file/d/1AjeGtOuDETyY-QFBphTPBXXTa6Vvxecu/view?usp=share_link","icon":"pdf"}
+        ]},
+    {"id":5 , "nombre" : "El Neolítico", "icon":"../img/historia/neolitico-icon.png","class": "neolitico", "texto":[
+        {"nombre":"El Neolítico","link":"https://drive.google.com/file/d/1u33dcguuPeZEjy8nU3JJv9BXPe6sIm6P/view?usp=share_link","icon":"pdf"},
+        {"nombre":"El Neolítico - Presentación","link":"https://drive.google.com/file/d/1IiDzyeeqmau7NS_rmxmPOw4j1nrFUHc6/view?usp=share_link","icon":"pdf"},
+        {"nombre":"Edad de los Metales","link":"https://drive.google.com/file/d/1lwtlzrwU3WEOjeQtJDpN0czzlUWWtWqG/view?usp=share_link","icon":"pdf"}
+        ]},
+    {"id": 6, "nombre" : "Mesopotamia", "icon":"../img/historia/sumerios-icon.png","class": "sumerios", "texto":[
+        {"nombre":"El Cercano Oriente - Los Sumerios","link":"https://drive.google.com/file/d/1Mh_uf2yVgulOyUCzBTHrcjDMkQfYnGge/view?usp=share_link","icon":"pdf"},
+        {"nombre":"El Código de Hammurabi","link":"https://drive.google.com/file/d/1oyZTzdap6qrIg1MP2N_8kXBUx2AqI3OG/view?usp=share_link","icon":"pdf"},
+        {"nombre":"La Epopeya de Gilgamesh","link":"https://drive.google.com/file/d/1wUu7e0sTtbsst8TYLijhQw_mTmiyqZkk/view?usp=share_link","icon":"pdf"}
+        ]},
+    {"id": 7, "nombre" : "Antiguo Egipto", "icon":"../img/historia/egipto-icon.png","class": "egipto", "texto":[
+        {"nombre":"El Antiguo Egipto","link":"https://drive.google.com/file/d/1ZnMqkawBjkYGgr-AurlaQ0RqbmpahcLP/view?usp=share_link","icon":"pdf"},
+        {"nombre":"El Faraón","link":"https://drive.google.com/file/d/1OJbaVEoPNwwBvN_NdKvNXLa12x3aGe1x/view?usp=share_link","icon":"pdf"},
+        {"nombre":"Las Pirámides y su evolución","link":"https://drive.google.com/file/d/1y3r2DkEPBe_Lyk2gH92I-UD_l5dvLf0d/view?usp=share_link","icon":"pdf"},
+        {"nombre":"Los campesinos egipcios","link":"https://drive.google.com/file/d/1k9gGy7FRcriUkEdCssLvYlo_xNCrnoOw/view?usp=share_link","icon":"pdf"},
+        {"nombre":"La Religión Egipcia I","link":"https://drive.google.com/file/d/1Uqz94-lLtWKm-EhAwm_-C7GT_OrQOkol/view?usp=share_link","icon":"pdf"},
+        {"nombre":"La Religión Egipcia II","link":"https://drive.google.com/file/d/1ElqVUWP3InPyulYaSl26hWTMZs8hqygh/view?usp=share_link","icon":"pdf"},
+        {"nombre":"El Juicio de Osiris","link":"https://drive.google.com/file/d/1tw2-GpDJKD2ldPKgBeUxA73RL1zoSTiD/view?usp=share_link","icon":"pdf"}
+        ]},
+    {"id": 8, "nombre" : "Antigua Grecia", "icon":"../img/historia/grecia-icon.png","class": "grecia"},
+    {"id": 9, "nombre" : "Antigua Roma", "icon":"../img/historia/roma-icon.png","class": "roma"},
+    {"id": 10, "nombre" : "Civilizaciones Americanas", "icon":"../img/historia/americanas-icon.png","class": "americanas"},
+    {"id": 11, "nombre" : "Edad Media", "icon":"../img/historia/media-icon.png","class": "media"}
+]

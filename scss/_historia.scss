@@ -1,0 +1,131 @@
+.gridContainer-historia{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    grid-template-areas: 
+    "head head"
+    "sub sub"
+    "main main"
+    "info info"
+    "footer footer";
+    justify-items: center;
+}
+
+/* recursos */
+.recu-historia{
+    grid-area: main;
+    .caja-titulo-historia{
+        h1{
+            color: $oscuro;
+            text-align: center;
+        }  
+    }
+    .cajas-historia{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .caja-historia{
+            cursor: pointer;
+            background-color: black;
+            border-radius: 15px;
+            margin: 10px;
+            width: 250px;
+            height: 150px;
+            overflow:hidden;
+            text-decoration: none;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: flex-end;
+            h3{
+                text-decoration: none;
+                color: $claro;
+                font-size: 2em;
+            }
+            img{
+                width: 55px;
+                height: 55px;
+                display: none;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            &:hover{
+                box-shadow:4px -4px $oscuro;
+                transform: translateX(-4px) translateY(4px);
+                img{
+                    display: inline;
+                }
+
+            }
+        }
+        //// ESTILO DE CADA CAJA Y FONDO
+        .historia{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../img/historia/historia.jpg);
+            background-size: cover;
+        }
+        .hominidos{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../img/historia/hominidos.jpg);
+            background-size: cover;
+        }
+        .prehistoria{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../img/historia/prehistoria.jpg);
+            background-size: cover;
+        }
+        .paleolitico{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../img/historia/paleolitico.jpg);
+            background-size: cover;
+        }
+        .neolitico{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../img/historia/neolitico.jpg);
+            background-size: cover;
+        }
+        .sumerios{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../img/historia/sumerios.jpg);
+            background-size: cover;
+        }
+        .egipto{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../img/historia/egipto.jpg);
+            background-size: cover;
+        }
+        .grecia{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../img/historia/grecia.jpg);
+            background-size: cover;
+        }
+        .roma{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../img/historia/roma.jpg);
+            background-size: cover;
+        }
+        .americanas{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../img/historia/americanas.jpg);
+            background-size: cover;
+        }
+        .media{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../img/historia/media.jpg);
+            background-size: cover;
+        }
+
+    }
+    
+}
+.info-container{
+    grid-area: info;
+}
+.tesoro-container{
+    grid-area: info;
+}
+@media screen and (max-width: 460px){
+    .recu-historia{
+        margin: 5px;
+        width: 90%;
+        .cajas-historia{
+            .caja-historia{
+                height: 150px;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,607 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2C791;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #F2C791; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #8C4830; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #F2C791; /* creates padding around scroll thumb */
+}
+
+.box {
+  margin: 0;
+}
+
+.modalOscuro {
+  display: none;
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 55px;
+  background-color: #F2C791;
+  z-index: 1;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  position: fixed;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+header .btn-menu {
+  display: none;
+}
+header .btn-menu i {
+  font-size: 20px;
+  width: 20px;
+  cursor: pointer;
+  color: #8C4830;
+  text-align: center;
+}
+header .title h1 {
+  font-size: 2.5em;
+  font-family: "PT Sans Narrow", sans-serif;
+  margin: 0;
+  color: #8C4830;
+}
+header .title h1 img {
+  width: 40px;
+  height: 40px;
+}
+header .title h1 .text2 {
+  width: 30px;
+  height: 30px;
+}
+header input {
+  display: none;
+}
+header .tesoro-carrito {
+  margin: 3px;
+  align-items: center;
+}
+header .tesoro-carrito .tesoro1 {
+  width: 50px;
+  margin-bottom: 10px;
+}
+header .tesoro-carrito .tesoro2 {
+  width: 50px;
+  display: none;
+  box-shadow: 1px 1px 15px 10px #ffffff;
+  margin-bottom: 10px;
+}
+
+/* menu */
+.menu ul {
+  list-style: none;
+  background-color: #F2C791;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+}
+.menu ul li {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #8C4830;
+}
+.menu ul li:hover {
+  text-decoration: underline;
+}
+.menu ul li ul {
+  position: absolute;
+  display: none;
+  z-index: 3;
+}
+.menu ul li ul li {
+  display: block;
+  background-color: #8C4830;
+  color: #F2C791;
+}
+.menu ul li ul li a {
+  color: #F2C791;
+}
+.menu ul li:hover ul {
+  display: block;
+}
+.menu ul .redes {
+  display: none;
+}
+.menu label i {
+  visibility: hidden;
+  width: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #8C4830;
+}
+
+/* footer */
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+footer h3 {
+  font-size: 2em;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #8C4830;
+  margin: 10px;
+}
+footer .contacto {
+  margin-top: 50px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .contacto li {
+  margin: 10px;
+  font-size: 30px;
+  color: #8C4830;
+  list-style: none;
+}
+footer .contacto li a {
+  text-decoration: none;
+  color: #8C4830;
+}
+footer .contacto li a i {
+  color: #8C4830;
+  font-size: 30px;
+}
+footer .contacto li a:link, footer .contacto li a:visited, footer .contacto li a:active {
+  text-decoration: none;
+  color: #8C4830;
+}
+footer .arriba-flecha {
+  align-self: flex-end;
+}
+footer .arriba-flecha a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #8C4830;
+}
+
+@media screen and (max-width: 1000px) {
+  footer .contacto {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 760px) {
+  header {
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header .menu {
+    height: 50px;
+  }
+  header .title h1 {
+    margin: 0px;
+  }
+  .contacto {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 460px) {
+  header {
+    flex-direction: row;
+    justify-content: left;
+    width: 95%;
+    padding: 0px;
+    padding-bottom: 5px;
+    height: 50px;
+  }
+  header .btn-menu {
+    display: inline-block;
+    margin: 10px;
+  }
+  header .menu {
+    position: absolute;
+    background-color: #F2C791;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease;
+  }
+  header .menu .title {
+    padding: 5px;
+  }
+  header .menu ul {
+    flex-direction: column;
+  }
+  header .menu ul li {
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header .menu ul li ul {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 10%;
+  }
+  header .menu ul .redes {
+    display: block;
+    align-content: flex-end;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #8C4830;
+  }
+  header .menu label {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+  }
+  header .menu label i {
+    visibility: visible;
+  }
+  #btn-menu:checked ~ .menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+  footer .contacto a {
+    font-size: 20px;
+  }
+  footer .contacto li {
+    margin: 0;
+  }
+}
+.gridContainer-historia {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content min-content min-content min-content;
+  grid-template-areas: "head head" "sub sub" "main main" "info info" "footer footer";
+  justify-items: center;
+}
+
+/* recursos */
+.recu-historia {
+  grid-area: main;
+}
+.recu-historia .caja-titulo-historia h1 {
+  color: #8C4830;
+  text-align: center;
+}
+.recu-historia .cajas-historia {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.recu-historia .cajas-historia .caja-historia {
+  cursor: pointer;
+  background-color: black;
+  border-radius: 15px;
+  margin: 10px;
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+.recu-historia .cajas-historia .caja-historia h3 {
+  text-decoration: none;
+  color: #F2C791;
+  font-size: 2em;
+}
+.recu-historia .cajas-historia .caja-historia img {
+  width: 55px;
+  height: 55px;
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.recu-historia .cajas-historia .caja-historia:hover {
+  box-shadow: 4px -4px #8C4830;
+  transform: translateX(-4px) translateY(4px);
+}
+.recu-historia .cajas-historia .caja-historia:hover img {
+  display: inline;
+}
+.recu-historia .cajas-historia .historia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/historia/historia.jpg);
+  background-size: cover;
+}
+.recu-historia .cajas-historia .hominidos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/historia/hominidos.jpg);
+  background-size: cover;
+}
+.recu-historia .cajas-historia .prehistoria {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/historia/prehistoria.jpg);
+  background-size: cover;
+}
+.recu-historia .cajas-historia .paleolitico {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/historia/paleolitico.jpg);
+  background-size: cover;
+}
+.recu-historia .cajas-historia .neolitico {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/historia/neolitico.jpg);
+  background-size: cover;
+}
+.recu-historia .cajas-historia .sumerios {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/historia/sumerios.jpg);
+  background-size: cover;
+}
+.recu-historia .cajas-historia .egipto {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/historia/egipto.jpg);
+  background-size: cover;
+}
+.recu-historia .cajas-historia .grecia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/historia/grecia.jpg);
+  background-size: cover;
+}
+.recu-historia .cajas-historia .roma {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/historia/roma.jpg);
+  background-size: cover;
+}
+.recu-historia .cajas-historia .americanas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/historia/americanas.jpg);
+  background-size: cover;
+}
+.recu-historia .cajas-historia .media {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/historia/media.jpg);
+  background-size: cover;
+}
+
+.info-container {
+  grid-area: info;
+}
+
+.tesoro-container {
+  grid-area: info;
+}
+
+@media screen and (max-width: 460px) {
+  .recu-historia {
+    margin: 5px;
+    width: 90%;
+  }
+  .recu-historia .cajas-historia .caja-historia {
+    height: 150px;
+  }
+}
+/* subtitulo */
+.subtitulo {
+  grid-area: sub;
+  display: flex;
+}
+.subtitulo .sub {
+  font-size: 5em;
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #8C4830;
+  margin-top: 90px;
+}
+.subtitulo .sub img {
+  width: 60px;
+  height: 60px;
+}
+.subtitulo .abajo {
+  text-align: center;
+  font-size: 30px;
+  color: #8C4830;
+}
+
+@media screen and (max-width: 760px) {
+  .subtitulo {
+    margin-top: 60px;
+  }
+  .subtitulo .sub {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 460px) {
+  .subtitulo {
+    margin-top: 0px;
+  }
+}
+.divContainer {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  z-index: 4;
+  height: auto;
+  margin-top: 20px;
+}
+
+.carrito {
+  display: none;
+  text-align: center;
+  width: 90%;
+  -webkit-animation: bounceInDown;
+          animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s; /* don't forget to set a duration! */
+  background-color: #F2C791;
+  color: #8C4830;
+  border-radius: 15px;
+  box-shadow: 4px -4px #8C4830;
+}
+
+.recursosContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  flex-direction: row;
+}
+
+.info {
+  border: 2px solid #8C4830;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #F2C791;
+  color: #8C4830;
+  border-radius: 15px;
+  box-shadow: 4px -4px #8C4830;
+  width: 45%;
+}
+.info h2 {
+  position: relative;
+}
+.info h2 img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -28px;
+  right: -28px;
+}
+
+.infoHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.infoHeader h3 {
+  font-family: "PT Sans Narrow", sans-serif;
+  margin: 0;
+  color: #8C4830;
+}
+.infoHeader h3 img {
+  width: 40px;
+  height: 40px;
+}
+.infoHeader h3 .text2 {
+  width: 30px;
+  height: 30px;
+}
+
+.infoTitulo {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+.infoTitulo h1 {
+  font-size: 3em;
+  margin: 5px;
+}
+
+.infoImagen {
+  width: 55px;
+  height: 55px;
+  margin: 5px;
+}
+
+.infoTexto {
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+  margin: 5px;
+}
+.infoTexto a:link, .infoTexto a:visited, .infoTexto a:active {
+  text-decoration: none;
+  color: #8C4830;
+}
+.infoTexto img {
+  width: 18px;
+  height: 18px;
+}
+.infoTexto h4 img {
+  width: 30px;
+  height: 30px;
+}
+
+.tesoro {
+  display: none;
+  cursor: pointer;
+}
+
+.tesoro2 {
+  display: none;
+  box-shadow: 1px 1px 10px 5px #ffffff;
+}
+
+iframe {
+  width: 300px;
+  height: 250px;
+}
+
+.carrito2 {
+  display: none;
+  text-align: center;
+  width: 60%;
+  -webkit-animation: bounceInDown;
+          animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s; /* don't forget to set a duration! */
+  background-color: #F2C791;
+  color: #8C4830;
+  border-radius: 15px;
+  box-shadow: 4px -4px #8C4830;
+}
+
+.recursosTesoro {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+.recursosTesoro .recurso {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.recursosTesoro .recurso .textoLink {
+  font-size: 1.5em;
+}
+.recursosTesoro .recurso a:link, .recursosTesoro .recurso a:visited, .recursosTesoro .recurso a:active {
+  text-decoration: none;
+  color: #8C4830;
+}
+.recursosTesoro .recurso img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+.recursosTesoro .recurso .btnEliminar {
+  margin: 10px;
+}/*# sourceMappingURL=estilo.css.map */

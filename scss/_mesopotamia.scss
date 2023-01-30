@@ -1,0 +1,230 @@
+.Sumerian-artifact-1-hex { color: #f2ad5a; }
+.Sumerian-artifact-2-hex { color: #F2C791; }
+.Sumerian-artifact-3-hex { color: #D99B66; }
+.Sumerian-artifact-4-hex { color: #BF754B; }
+.Sumerian-artifact-5-hex { color: #8C4830; }
+.body-mesopotamia{
+    background-color: #F2C791;
+}
+.body-mesopotamia::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+.body-mesopotamia::-webkit-scrollbar-track {
+    background: #F2C791;        /* color of the tracking area */
+}
+.body-mesopotamia::-webkit-scrollbar-thumb {
+    background-color: #8C4830;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #F2C791;  /* creates padding around scroll thumb */
+}
+.gridContainer-mesopotamia{
+    background-color: #F2C791;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    grid-template-areas: 
+    "head head"
+    "sub sub"
+    "main main"
+    "aside aside"
+    "footer footer";
+    justify-items: center;
+    header{
+        .btn-menu{
+            i{
+                color: #8C4830;
+            }
+        }
+        background-color: #F2C791;
+        .title{
+            h1{
+                color: #8C4830;
+            }
+        }
+        .menu{
+            ul{
+                background-color: #F2C791;
+                li{
+                    a{
+                        color: #8C4830;
+                    }
+                    ul {
+                        li {
+                            background-color: #8C4830;
+                            a{
+                                color: #F2C791
+                            }
+                            color: #F2C791;
+                        }
+                    }
+                }
+            }
+            label{
+                i{
+                    color: #8C4830;
+                }
+            }
+        }
+    }
+    .subtitulo{
+        background-color: #F2C791;
+        .sub{
+            color: #8C4830;
+        }
+    }
+    footer{
+        .contacto{
+            li{
+                margin: 10px;
+                font-size: 30px;
+                color:#8C4830;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: #8C4830;
+                    i{
+                        color: #8C4830;
+                        font-size: 30px;
+                    }
+    
+                }
+                a:link, a:visited, a:active{
+                    text-decoration: none;
+                    color: #8C4830;
+                }
+            }
+        }
+        .arriba-flecha{
+            align-self: flex-end;
+            a{
+    
+                text-decoration: none;
+                font-size: 3rem;
+                color: #8C4830;
+            }
+        }
+    }
+}
+/* recursos */
+.recu-mesopotamia{
+    grid-area: main;
+    .caja-titulo-sumerios{
+        h1{
+            color: $oscuro;
+            text-align: center;
+        }  
+    }
+    .cajas-mesopotamia{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .caja-mesopotamia{
+            background-color: #8C4830;
+            border-radius: 8%;
+            margin: 10px;
+            width: 250px;
+            height: 150px;
+            overflow:hidden;
+            text-decoration: none;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: flex-end;
+            h3{
+                text-decoration: none;
+                color: #F2C791;
+                font-size: 2em;
+            }
+            img{
+                width: 55px;
+                height: 55px;
+                display: none;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            &:hover{
+                box-shadow:4px -4px #8C4830;
+                transform: translateX(-4px) translateY(4px);
+                img{
+                    display: inline;
+                }
+
+            }
+        }
+        .ubicacion{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(/img/historia/sumerios/ubicacion.jpg);
+            background-size: cover;
+        }
+        .sumerios{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/img/historia/sumerios/sumerios.jpg);
+            background-size: cover;
+        }
+        .ciudades{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/img/historia/sumerios/ciudades.jpg);
+            background-size: cover;
+        }
+        .zigurat{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(/img/historia/sumerios/zigurat.jpg);
+            background-size: cover;
+        }
+        .cuneiforme{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/img/historia/sumerios/cuneiforme.jpg);
+            background-size: cover;
+        }
+        .leyes{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/img/historia/sumerios/leyes.jpg);
+            background-size: cover;
+        }
+        .gilgamesh{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/img/historia/sumerios/gilgamesh.jpg);
+            background-size: cover;
+        }
+    }
+    
+}
+aside{
+    grid-area: aside;
+    width: 80%;
+    h1{
+        width: 100%;
+        font-size: 4em;
+        color: #8C4830;
+        text-align: center;
+        text-justify: auto;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    p{
+        color: #8C4830;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 460px){
+    header{
+        .menu-meso{
+            background-color: #F2C791;
+
+        }
+    }
+    .sub-mesopotamia{
+        font-size: 0.7em;
+    }
+    .recu-mesopotamia{
+        width: 90%;
+        .cajas-mesopotamia{
+            .caja-mesopotamia{
+                border-radius: 20px;
+                margin: 2;
+                height: 100px;
+            }
+
+        }
+    }
+}

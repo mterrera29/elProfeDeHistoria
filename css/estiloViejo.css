@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+body{
+    background-color: #E0ECE9;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    grid-template-areas: 
+    "head head"
+    "sub sub"
+    "main main"
+    "footer footer";
+    justify-items: center;
+}
+/* header */
+header{
+    width: 100%;
+    background-color: #E0ECE9;
+    z-index: 2;
+    display: flex;
+    align-items:baseline;
+    flex-wrap: nowrap;
+    position: fixed;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h1{
+    font-size: 2.5em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #629C8A;
+    align-items: baseline;
+    margin-top: 15px;
+}
+h1 img{
+    width: 20px;
+    height: 20px;
+}
+/* menu */
+.menu ul{
+    list-style: none;
+    background-color: #E0ECE9;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+.menu li{
+    display: inline-block;
+    position:relative;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.menu ul a{
+    text-decoration: none;
+    color: #629C8A;
+}
+.menu li:hover{
+    text-decoration: underline;
+}
+.menu ul ul {
+    position: absolute;
+    display: none; 
+}
+.menu ul ul li {
+    display: block;
+    background-color: #629C8A;
+    color: #E0ECE9;
+}
+.menu ul li:hover ul {
+    display:block;
+}
+/* subtitulo */
+.gridContainer div{
+    grid-area: sub;
+}
+.sub{
+    font-size: 5em;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #629C8A;
+    margin-top: 90px;
+}
+.sub img{
+    width: 50px;
+    height: 50px;
+}
+.abajo {
+    text-align: center;
+    font-size: 30px;
+}
+/* recursos */
+.gridContainer .recu{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+}
+.caja{
+    border-radius: 5%;
+    margin: 10px;
+    font-size: 4em;
+    text-align: center;
+    line-height: 550px;
+    width: 350px;
+    height: 350px;
+    overflow:hidden;
+    color: #E0ECE9;
+    transition: all 0.5s ease;
+    }
+.caja a{
+    text-decoration: none;
+    color: #E0ECE9;
+}
+.caja:hover{
+    transform: scale(1.02, 1.02);
+}
+.historia{
+    background-image: url(https://plustatic.com/5124/conversions/ramas-historia-default.jpg);
+    background-size: cover;
+}
+.geografía{
+    background-image: url(https://concepto.de/wp-content/uploads/2019/09/geografia-fisica-e1568415626753.jpg);
+    background-size: cover;
+}
+.mapas{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/382/864/large_2x/compass-lying-on-a-very-old-vintage-map-photo.jpg);
+    background-size: cover;
+}
+.artículos{
+    background-image: url(https://revistapublicando.org/revista/public/site/images/jgonzalonso/jonas-jacobsson-0frj2scuy4k-unsplash-1.jpg);
+    background-size: cover;
+    }
+.peliculas{
+    background-image: url(https://img.europapress.es/fotoweb/fotonoticia_20200505141128_1200.jpg);
+    background-size: cover;
+}
+.juegos{
+    background-image: url(https://academiaplay.es/wp-content/uploads/2017/06/web-ryse.jpg);
+    background-size: cover;
+}
+/* footer */
+.gridContainer footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+h3{
+    font-size: 2em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #629C8A;
+    margin: 10px;
+}
+.contacto li{
+    display: inline;
+    margin: 10px;
+}
+.contacto li img{
+    width: 60px;
+}
+h4{
+    margin: 20px;
+    align-self: flex-end;
+}
+h4 a{
+    text-decoration: none;
+    color: #629C8A;
+    font-size: 3rem;
+}
+@media screen and (max-width: 760px){
+    header{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    h1{
+        margin: 0px;
+    }
+    .sub{
+        margin-top: 120px;
+    }
+}

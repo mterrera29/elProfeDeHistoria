@@ -1,0 +1,37 @@
+/* subtitulo */
+.subtitulo{
+    grid-area: sub;
+    display: flex;
+    
+    .sub{
+        font-size: 5em;
+        text-align: center;
+        font-family: 'PT Sans Narrow', sans-serif;
+        color:$oscuro;
+        margin-top: 90px;
+        img{
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .abajo {
+        text-align: center;
+        font-size: 30px;
+        color: $oscuro;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .subtitulo{
+        margin-top: 60px;
+        .sub{
+            font-size: 4em;
+        }
+    }
+
+}
+@media screen and (max-width: 460px){
+    .subtitulo{
+        margin-top: 0px;
+    }
+}
